@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sample HTML Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+	<style>
+		:root {
+			--bg-a: #f6efe5;
+			--bg-b: #d9f3ff;
+			--text: #1b1f24;
+			--muted: #4a5565;
+			--card: #ffffffd6;
+			--accent: #e85d04;
+			--accent-2: #2a9d8f;
+			--ring: #0b6dff;
+			--radius: 18px;
+			--shadow: 0 14px 34px rgba(20, 40, 80, 0.15);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Space Grotesk", sans-serif;
+			color: var(--text);
+			background:
+				radial-gradient(circle at 12% 20%, rgba(255, 179, 71, 0.35), transparent 38%),
+				radial-gradient(circle at 88% 10%, rgba(42, 157, 143, 0.28), transparent 42%),
+				linear-gradient(130deg, var(--bg-a), var(--bg-b));
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			padding: 24px;
+		}
+
+		.card {
+			width: min(760px, 100%);
+			background: var(--card);
+			backdrop-filter: blur(4px);
+			border: 1px solid rgba(255, 255, 255, 0.7);
+			border-radius: var(--radius);
+			box-shadow: var(--shadow);
+			overflow: hidden;
+			transform: translateY(16px);
+			opacity: 0;
+			animation: reveal 650ms ease-out forwards;
+		}
+
+		.banner {
+			background: linear-gradient(95deg, var(--accent), #ff9f1c);
+			color: #fff;
+			padding: 12px 18px;
+			font-size: 0.92rem;
+			letter-spacing: 0.04em;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.content {
+			padding: 28px;
+		}
+
+		h1 {
+			margin: 0 0 8px;
+			font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+			line-height: 1.12;
+		}
+
+		p {
+			margin: 0 0 18px;
+			color: var(--muted);
+			line-height: 1.6;
+		}
+
+		.actions {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+			margin-top: 8px;
+		}
+
+		button {
+			border: 0;
+			border-radius: 999px;
+			padding: 10px 18px;
+			font: inherit;
+			font-weight: 700;
+			cursor: pointer;
+			transition: transform 150ms ease, filter 150ms ease;
+		}
+
+		.primary {
+			background: var(--accent-2);
+			color: #fff;
+		}
+
+		.ghost {
+			background: #ffffff;
+			color: var(--text);
+			border: 1px solid #d9dee9;
+		}
+
+		button:hover {
+			transform: translateY(-1px);
+			filter: brightness(1.03);
+		}
+
+		button:focus-visible {
+			outline: 3px solid var(--ring);
+			outline-offset: 2px;
+		}
+
+		.message {
+			margin-top: 14px;
+			font-weight: 600;
+			color: #0b4f6c;
+			min-height: 1.4em;
+		}
+
+		@keyframes reveal {
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+		@media (max-width: 560px) {
+			.content {
+				padding: 20px;
+			}
+
+			.banner {
+				font-size: 0.8rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="card" aria-label="Sample page card">
+		<div class="banner">Frontend Practice Starter</div>
+		<section class="content">
+			<h1>Welcome to your sample HTML page</h1>
+			<p>
+				This file is a complete starter with semantic HTML, responsive CSS, and a tiny script.
+				Use it as a base to practice layout, styling, and simple interactions.
+			</p>
+			<div class="actions">
+				<button class="primary" id="helloBtn" type="button">Say Hello</button>
+				<button class="ghost" id="clearBtn" type="button">Clear</button>
+			</div>
+			<div class="message" id="message" aria-live="polite"></div>
+		</section>
+	</main>
+
+	<script>
+		const helloBtn = document.getElementById("helloBtn");
+		const clearBtn = document.getElementById("clearBtn");
+		const message = document.getElementById("message");
+
+		helloBtn.addEventListener("click", () => {
+			const now = new Date().toLocaleTimeString();
+			message.textContent = `Hello! You clicked the button at ${now}.`;
+		});
+
+		clearBtn.addEventListener("click", () => {
+			message.textContent = "";
+		});
+	</script>
+</body>
+</html>
