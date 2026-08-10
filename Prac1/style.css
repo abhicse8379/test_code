@@ -1,0 +1,100 @@
+/* General */
+body {
+    
+    background: linear-gradient(to right, #bfdb9c, #76ae5c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    
+    background: linear-gradient(to right, #315c33eb, #45abbd);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Navigation */
+nav {
+    background-color: rgba(197, 246, 197, 0.655);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    background-color: rgb(213, 223, 196);
+    margin-top: 25px;
+    padding: 15px;
+    border: 0px solid rgb(0, 0, 0);
+    color: rgb(2, 63, 14);
+    border-radius: 10px;
+}
+
+/* Aside */
+aside {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.553);
+    background-color: #f8f81096;
+    margin-top: 15px;
+    padding: 10px;
+    border: 6px dotted rgba(248, 11, 11, 0.581);
+}
+
+/* Table */
+table {
+    
+    background-color: rgb(187, 202, 120);
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Form */
+input, textarea {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    background-color: rgb(3, 90, 51);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #315c33eb, #a2dda4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+A{
+    Color: rgb(255, 255, 255);
+}

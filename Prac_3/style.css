@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: linear-gradient(to right, #c5c3c3, #e5e1e1);
+}
+header{
+    background-color: rgb(39, 204, 80);
+    text-align: center;
+    color: white;
+}
+h1{
+background-color: rgb(174, 216, 250);
+text-align: center;
+color:darkblue;
+}
+h2{
+    color: darkblue;
+    font-size: 16px;
+    font-family:arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0px;
+
+}
+hr{
+    border: 1px solid #7d7b7b;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 2px 5px rgba(11, 9, 9, 0.386);
+}
+button{
+padding:8px 15px;
+margin-top:10px;
+}
+button:hover{
+background-color: #1188f7;
+color: white;
+}
+input,select{
+padding:6px;
+width:200px;
+}
+pre{
+background:#eeeeee;
+padding:10px;
+}
