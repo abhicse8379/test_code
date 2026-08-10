@@ -5,7 +5,7 @@
 }
 body{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: linear-gradient(to right, #c5c3c3, #e5e1e1);
+    background: linear-gradient(to right, #e3e2e2, #fffefe);
 }
 header{
     background-color: rgb(39, 204, 80);
