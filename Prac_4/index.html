@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1 id="storeTitle">ShopEase </h1>
+    <nav>
+        <ul id="navigation">
+            <li> Home</li>
+            <li> Products</li>
+            <li> Offers</li>
+            <li> Contact</li>
+        </ul>
+    </nav>
+    <div class="header-buttons">
+        <button id="themeBtn">Dark Mode</button>
+        <button id="cartBtn">
+            Cart (<span id="cartCount">0</span>)
+        </button>
+    </div>
+</header>
+<!-- Dynamic Menu -->
+<div style="text-align:center; margin-top:20px;">
+    <button id="menuBtn">
+        ☰ Show Menu
+    </button>
+    <ul id="menuItems">
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Home Appliances</li>
+        <li>Accessories</li>
+    </ul>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+    <h2 id="welcomeText">
+        Welcome to ShopEase
+    </h2>
+    <p id="description">
+        Discover amazing products at affordable prices.
+    </p>
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+        <div id="searchMessage" class="message"></div>
+    </div>
+</section>
+
+
+<!-- Products -->
+<section class="products">
+    <h2>Featured Products</h2>
+    <div id="productContainer">
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                alt="Running Shoes"
+            >
+            <h3>Running Shoes</h3>
+            <p class="price">₹2,499</p>
+            <button class="addCart">
+                Add to Cart
+            </button>
+        </div>
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+                alt="Smart Watch"
+            >
+            <h3>Smart Watch</h3>
+            <p class="price">₹3,999</p>
+            <button class="addCart">
+                Add to Cart
+            </button>
+        </div>
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                alt="Headphones"
+            >
+            <h3>Wireless Headphones</h3>
+            <p class="price">₹1,999</p>
+            <button class="addCart">
+                Add to Cart
+            </button>
+        </div>
+        <div class="product-card">
+            <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+                alt="Smartphone"
+            >
+            <h3>Smartphone</h3>
+            <p class="price">₹19,999</p>
+            <button class="addCart">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact / Feedback Form -->
+<section class="contact-section">
+    <h2>Customer Feedback</h2>
+    <form id="feedbackForm">
+        <label for="name">
+            Name
+        </label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+        >
+        <label for="email">
+            Email
+        </label>
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+        >
+        <label for="category">
+            Product Category
+        </label>
+        <select id="category">
+            <option value="">
+                Select category
+            </option>
+            <option value="electronics">
+                Electronics
+            </option>
+            <option value="fashion">
+                Fashion
+            </option>
+            <option value="accessories">
+                Accessories
+            </option>
+        </select>
+        <button type="submit">
+            Submit Feedback
+        </button>
+        <div id="formMessage"></div>
+    </form>
+</section>
+
+<!-- Image Preview -->
+<div id="imagePreview">
+    <span id="closePreview">
+        &times;
+    </span>
+    <img id="previewImage" src="" alt="Product Preview">
+</div>
+
+<footer>
+    <p>
+        © 2026 ShopEase Online Store | Interactive JavaScript Demo
+    </p>
+</footer>
+</body>
+</html>

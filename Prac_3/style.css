@@ -7,15 +7,9 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to right, #e3e2e2, #fffefe);
 }
-header{
-    background-color: rgb(39, 204, 80);
-    text-align: center;
-    color: white;
-}
 h1{
-background-color: rgb(174, 216, 250);
-text-align: center;
-color:darkblue;
+    text-align: center;
+    color:darkblue;
 }
 h2{
     color: darkblue;

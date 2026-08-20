@@ -1,0 +1,23 @@
+
+## Requirement Mapping
+
+| Task                                    | Implementation in the webpage                                                                                     |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **1. HTML elements**                    | Headings, buttons, images, forms, lists, inputs, select box                                                       |
+| **2. DOM methods**                      | `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`, `querySelector()`, `querySelectorAll()` |
+| **3. Modify content/attributes/styles** | `textContent`, `setAttribute()`, `style`, `classList.toggle()`                                                    |
+| **4. Create/append/replace/remove**     | `createElement()`, `appendChild()`, `replaceChildren()`, `remove()`                                               |
+| **5. Event handling**                   | `click`, `dblclick`, `mouseover`, `mouseout`, `keydown`, `keyup`, `change`, `submit`                              |
+| **6. Feedback messages**                | Search results, cart confirmation, form validation, category selection                                            |
+| **7. Interactive features**             | Dark mode, image preview, dynamic menu, live search, shopping cart                                                |
+
+### Key demonstrations for your practical/viva
+
+**DOM manipulation:**
+The JavaScript dynamically finds elements, changes their text and styles, creates new product cards, replaces existing content, and removes temporary elements.
+
+**Event handling:**
+The page responds immediately to mouse clicks, double-clicks, mouse movement, keyboard input, dropdown changes, and form submission **without reloading the page**.
+
+**Interactive functionality:**
+For example, typing `watch` in the search box immediately filters the products, clicking a product image opens a preview, and clicking **Dark Mode** changes the complete webpage theme.

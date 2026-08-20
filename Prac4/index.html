@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ShopEase | Interactive Store</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="topbar">
+		<div>
+			<p class="eyebrow">ONLINE STORE</p>
+			<h1>ShopEase</h1>
+		</div>
+		<nav aria-label="Main navigation">
+			<button class="nav-link active" type="button">Shop</button>
+			<button class="nav-link" type="button">New arrivals</button>
+			<button class="nav-link" type="button">Offers</button>
+		</nav>
+		<button id="themeButton" class="icon-button" type="button" title="Switch colour theme">Theme</button>
+	</header>
+
+	<main>
+		<section class="intro">
+			<div>
+				<p class="eyebrow">CURATED FOR TODAY</p>
+				<h2>Everyday goods, made easy.</h2>
+				<p>Choose a product to preview it, then add it to your shopping list.</p>
+			</div>
+			<div class="cart-status" aria-live="polite">
+				<span id="cartCount">0</span>
+				<p>items in your list</p>
+			</div>
+		</section>
+
+		<section class="shop-layout" aria-label="Product catalogue">
+			<div>
+				<div class="section-heading">
+					<h2>Featured products</h2>
+					<button id="highlightButton" class="text-button" type="button">Highlight cards</button>
+				</div>
+				<div id="productGrid" class="product-grid">
+					<article class="product-card" data-name="Canvas Tote" data-price="$24" data-image="https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?auto=format&fit=crop&w=800&q=80">
+						<img src="https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?auto=format&fit=crop&w=800&q=80" alt="Natural canvas tote bag">
+						<div class="product-info"><h3>Canvas Tote</h3><p>$24</p><button class="add-button" type="button">Add to list</button></div>
+					</article>
+					<article class="product-card" data-name="Ceramic Mug" data-price="$18" data-image="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=80">
+						<img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=80" alt="White ceramic mug">
+						<div class="product-info"><h3>Ceramic Mug</h3><p>$18</p><button class="add-button" type="button">Add to list</button></div>
+					</article>
+					<article class="product-card" data-name="Desk Lamp" data-price="$36" data-image="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=800&q=80">
+						<img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&fit=crop&w=800&q=80" alt="Modern desk lamp">
+						<div class="product-info"><h3>Desk Lamp</h3><p>$36</p><button class="add-button" type="button">Add to list</button></div>
+					</article>
+				</div>
+			</div>
+
+			<aside class="side-panel">
+				<div class="preview" id="previewBox">
+					<img id="previewImage" src="https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?auto=format&fit=crop&w=800&q=80" alt="Canvas Tote preview">
+					<p id="previewName">Canvas Tote <span>$24</span></p>
+				</div>
+				<h2>Shopping list</h2>
+				<ul id="shoppingList"><li class="empty-item">Your list is empty.</li></ul>
+				<button id="clearButton" class="text-button" type="button">Clear list</button>
+			</aside>
+		</section>
+
+		<section class="newsletter">
+			<div><p class="eyebrow">STAY IN THE LOOP</p><h2>Get the next drop.</h2></div>
+			<form id="signupForm" novalidate>
+				<label for="emailInput">Email address</label>
+				<div class="form-row"><input id="emailInput" type="email" placeholder="you@example.com"><button type="submit">Subscribe</button></div>
+				<small id="typingHint">Start typing your email.</small>
+			</form>
+		</section>
+	</main>
+
+	<p id="feedback" class="feedback" aria-live="polite">Welcome to ShopEase. Explore a product to begin.</p>
+	<script src="script.js"></script>
+</body>
+</html>

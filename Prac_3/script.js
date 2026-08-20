@@ -1,27 +1,3 @@
-var bankName = "Secure Bank Ltd.";
-let branch = "Ahmedabad";
-const IFSC = "SBL0001234";
-
-console.log(bankName);
-console.log(branch);
-console.log(IFSC);
-
-// Scope Demonstration
-
-function variableScope(){
-
-    var x = 10;
-    let y = 20;
-    const z = 30;
-
-    console.log(x);
-    console.log(y);
-    console.log(z);
-}
-
-variableScope();
-
-
 //----------------------------
 // Loan Eligibility
 // if-else and Logical Operators
@@ -31,6 +7,10 @@ function checkLoanEligibility(){
     let age = Number(document.getElementById("age").value);
     let salary = Number(document.getElementById("salary").value);
     
+console.log(age);
+console.log(salary);
+console.log("test msg");
+
     if(age >= 21 && age <= 60 && salary >= 30000){
         document.getElementById("loanResult").innerHTML =
         "Eligible for Loan";
@@ -42,40 +22,23 @@ function checkLoanEligibility(){
 
 }
 
-
-//----------------------------
-// EMI Calculation
-// Arithmetic Operators
-//----------------------------
-
 function calculateEMI(){
 
     let P = Number(document.getElementById("loan").value);
-
     let annualRate = Number(document.getElementById("rate").value);
-
     let years = Number(document.getElementById("years").value);
-
     let R = annualRate/(12*100);
-
     let N = years*12;
 
     let EMI = (P*R*Math.pow((1+R),N))/(Math.pow((1+R),N)-1);
 
-    document.getElementById("emiResult").innerHTML ="Monthly EMI = ₹"+EMI.toFixed(2);
-
+    document.getElementById("emiResult").innerHTML ="Monthly EMI = ₹"+EMI.toFixed(3);
 }
-
-
-//----------------------------
-// Function with Return Value
-//----------------------------
 
 function simpleInterest(P,R,T){
     return (P*R*T)/100;
 }
 function calculateSI(){
-
     let P = Number(document.getElementById("principal").value);
     let R = Number(document.getElementById("interest").value);
     let T = Number(document.getElementById("time").value);
@@ -84,18 +47,12 @@ function calculateSI(){
     "Simple Interest = ₹"+SI;
 }
 
-
-//----------------------------
-// Switch Statement
-//----------------------------
-
 function accountDetails(){
-    let account =
-    document.getElementById("accountType").value;
+    let account = document.getElementById("accountType").value;
     let message="";
     switch(account){
         case "Savings":
-        message="Savings Account Interest : 3%";
+        message="Savings Account : 4% Interest";
         break;
         case "Current":
         message="Current Account : No Interest";
@@ -106,14 +63,8 @@ function accountDetails(){
         default:
         message="Invalid Account";
     }
-    document.getElementById("accountResult").innerHTML =
-    message;
+    document.getElementById("accountResult").innerHTML = message;
 }
-
-
-//----------------------------
-// For Loop
-//----------------------------
 
 function generateInterestTable(){
     let output="Year\tInterest\n";
@@ -124,22 +75,12 @@ function generateInterestTable(){
     output;
 }
 
-
-//----------------------------
-// While Loop
-//----------------------------
-
 let count=1;
 
 while(count<=3){
     console.log("Transaction "+count);
     count++;
 }
-
-
-//----------------------------
-// Do While Loop
-//----------------------------
 
 let number=1;
 
@@ -149,46 +90,3 @@ do{
     number++;
 }while(number<=3);
 
-
-//----------------------------
-// Nested If
-//----------------------------
-
-function premiumCustomer(balance, years){
-    if(balance>=500000){
-        if(years>=5){
-            return "Premium Customer";
-        }
-        else{
-            return "Regular Customer";
-        }
-    }
-    else{
-        return "Standard Customer";
-    }
-}
-
-console.log(premiumCustomer(600000,6));
-
-
-//----------------------------
-// Operators Demonstration
-//----------------------------
-
-let deposit = 50000;
-
-deposit += 5000;
-
-console.log(deposit);
-
-console.log(deposit > 40000);
-
-console.log(deposit == 55000);
-
-console.log(deposit != 60000);
-
-console.log(deposit >= 50000);
-
-let status = (deposit > 50000) ? "High Balance" : "Low Balance";
-
-console.log(status);
