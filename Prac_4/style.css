@@ -3,20 +3,17 @@
             margin: 0;
             padding: 0;
         }
-
         body {
             font-family: Arial, sans-serif;
             background: #f4f6f8;
             color: #222;
             transition: 0.3s;
         }
-
         /* Dark Theme */
         body.dark {
             background: #1d1f23;
             color: #f5f5f5;
         }
-
         header {
             background: #2878f0;
             color: white;
@@ -25,26 +22,21 @@
             align-items: center;
             justify-content: space-between;
         }
-
         header h1 {
             cursor: pointer;
         }
-
         nav ul {
             list-style: none;
             display: flex;
             gap: 25px;
         }
-
         nav li {
             cursor: pointer;
             font-weight: bold;
         }
-
         nav li:hover {
             text-decoration: underline;
         }
-
         .header-buttons button {
             margin-left: 8px;
             padding: 9px 14px;
@@ -52,37 +44,30 @@
             border-radius: 5px;
             cursor: pointer;
         }
-
         #themeBtn {
             background: #222;
             color: white;
         }
-
         #cartBtn {
             background: white;
             color: #2878f0;
         }
-
         .hero {
             text-align: center;
             padding: 40px 20px;
             background: white;
         }
-
         .dark .hero {
             background: #292c32;
         }
-
         .hero h2 {
             font-size: 32px;
             margin-bottom: 12px;
         }
-
         .hero p {
             margin-bottom: 20px;
             color: #666;
         }
-
         .dark .hero p {
             color: #ccc;
         }
