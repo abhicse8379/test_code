@@ -21,7 +21,6 @@ console.log("test msg");
     }
 
 }
-
 function calculateEMI(){
 
     let P = Number(document.getElementById("loan").value);
