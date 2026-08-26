@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCare Hospital - Patient Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CityCare Hospital</h1>
+        <h2>New Patient Registration</h2>
+
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" maxlength="50" required>
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="example@email.com" maxlength="100" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" placeholder="Enter 10-digit mobile number" maxlength="10" required>
+                <span class="error" id="mobileError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" required>
+                <span class="error" id="dobError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+                <span class="error" id="genderError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="bloodGroup">Blood Group *</label>
+                <select id="bloodGroup" required>
+                    <option value="">-- Select Blood Group --</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+                <span class="error" id="bloodError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <textarea id="address" placeholder="Enter your address" maxlength="200" required></textarea>
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="30" required>
+                <div class="strength" id="passwordStrength"></div>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password *</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="document">Upload ID Proof</label>
+                <input type="file" id="document" accept=".jpg,.jpeg,.png,.pdf">
+                <span class="error" id="fileError"></span>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label><input type="checkbox" id="terms"> I confirm that the information provided is correct.</label>
+            </div>
+            <span class="error" id="termsError"></span>
+
+            <br>
+            <button type="submit">Register Patient</button>
+            <div class="success-message" id="successMessage"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
