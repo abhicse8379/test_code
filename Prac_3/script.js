@@ -4,20 +4,18 @@
 //----------------------------
 
 function checkLoanEligibility(){
-    let age = Number(document.getElementById("age").value);
-    let salary = Number(document.getElementById("salary").value);
-    
-console.log(age);
-console.log(salary);
-console.log("test msg");
-
-    if(age >= 21 && age <= 60 && salary >= 30000){
+    console.log("Checking Loan Eligibility");
+    let a = Number(document.getElementById("age").value);
+    let s = Number(document.getElementById("salary").value);  
+    if(a >= 21 && a <= 60 && s >= 30000){
         document.getElementById("loanResult").innerHTML =
         "Eligible for Loan";
+        console.log("Eligible for Loan");
     }
     else{
         document.getElementById("loanResult").innerHTML =
         "Not Eligible";
+        console.log("Not Eligible");
     }
 
 }
@@ -77,7 +75,7 @@ function generateInterestTable(){
 let count=1;
 
 while(count<=3){
-    console.log("Transaction "+count);
+    console.log("While loop iteration: "+count);
     count++;
 }
 
@@ -85,7 +83,7 @@ let number=1;
 
 do{
 
-    console.log("Welcome Customer "+number);
+    console.log("Do while loop iteration: "+number);
     number++;
 }while(number<=3);
 

@@ -57,7 +57,7 @@
                 button.textContent = "Add to Cart";
                 button.style.backgroundColor =
                     "#2878f0";
-            }, 1000);
+            },  1000);
         });
     });
 
@@ -94,7 +94,7 @@
         "dblclick",
         function() {
             storeTitle.textContent =
-                "ShopEase Online Store 🛒";
+                "ShopEase \n Online Store";
             storeTitle.style.color =
                 "yellow";
         }
