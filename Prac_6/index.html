@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WanderGo Travels</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌍 WanderGo Travels</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#preferences">Preferences</a>
+        </nav>
+
+        <button id="themeBtn">🌙 Toggle Theme</button>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+
+            <h2>Explore the World with WanderGo</h2>
+
+            <p id="offer">
+                Loading today's special offer...
+            </p>
+
+            <button onclick="startJourney()">
+                Start Your Journey
+            </button>
+
+            <p id="welcome"></p>
+
+        </section>
+
+
+        <!-- Packages Section -->
+        <section id="packages">
+
+            <h2>Available Travel Packages</h2>
+
+            <div id="loading">
+                Loading travel packages...
+            </div>
+
+            <div id="packageContainer"></div>
+
+            <p id="error"></p>
+
+        </section>
+
+
+        <!-- Preferences -->
+        <section id="preferences">
+
+            <h2>Your Travel Preferences</h2>
+
+            <label>
+                Select Destination:
+            </label>
+
+            <select id="destination">
+
+                <option value="">
+                    -- Select Destination --
+                </option>
+
+                <option value="Paris">
+                    Paris
+                </option>
+
+                <option value="Dubai">
+                    Dubai
+                </option>
+
+                <option value="Bali">
+                    Bali
+                </option>
+
+                <option value="Switzerland">
+                    Switzerland
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <button onclick="savePreference()">
+                Save Preference
+            </button>
+
+            <p id="savedMessage"></p>
+
+            <p id="sessionInfo"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 WanderGo Travels Pvt. Ltd.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

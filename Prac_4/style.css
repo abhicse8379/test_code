@@ -4,13 +4,14 @@
             padding: 0;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: cambria, "Times New Roman", serif;
             background: #f4f6f8;
             color: #222;
             transition: 0.3s;
         }
         /* Dark Theme */
         body.dark {
+            font-family: arial, sans-serif;
             background: #1d1f23;
             color: #f5f5f5;
         }
@@ -76,7 +77,6 @@
             margin: 20px auto;
             max-width: 600px;
         }
-
         #searchInput {
             width: 100%;
             padding: 14px;
@@ -84,31 +84,27 @@
             border-radius: 8px;
             font-size: 16px;
         }
-
         .message {
             min-height: 25px;
             margin-top: 12px;
             color: #2878f0;
             font-weight: bold;
         }
-
         .products {
             max-width: 1100px;
             margin: 30px auto;
             padding: 0 20px;
         }
-
         .products h2 {
             text-align: center;
             margin-bottom: 25px;
         }
-
         #productContainer {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             gap: 25px;
-        }
 
+        }
         .product-card {
             background: white;
             border-radius: 10px;

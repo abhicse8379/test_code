@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "destination": "Paris",
+        "duration": "5 Days / 4 Nights",
+        "price": 75000,
+        "description": "Explore the Eiffel Tower, Louvre Museum and beautiful streets of Paris."
+    },
+    {
+        "id": 2,
+        "destination": "Dubai",
+        "duration": "4 Days / 3 Nights",
+        "price": 55000,
+        "description": "Experience luxury shopping, desert safari and Burj Khalifa."
+    },
+    {
+        "id": 3,
+        "destination": "Bali",
+        "duration": "6 Days / 5 Nights",
+        "price": 60000,
+        "description": "Enjoy beaches, temples and the natural beauty of Bali."
+    },
+    {
+        "id": 4,
+        "destination": "Switzerland",
+        "duration": "7 Days / 6 Nights",
+        "price": 120000,
+        "description": "Discover the Swiss Alps, scenic trains and beautiful mountain villages."
+    }
+]
