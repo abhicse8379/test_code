@@ -73,13 +73,13 @@ For the latest practical descriptions and problem statements, visit:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/abhicse8379/WTF.git
+git clone https://github.com/abhicse8379/test_code.git
 ```
 
 Move into the project folder.
 
 ```bash
-cd WTF
+cd test_code
 ```
 
 Open the folder in Visual Studio Code.
@@ -107,7 +107,7 @@ git add .
 Commit changes.
 
 ```bash
-git commit -m "Completed Practical 05"
+git commit -m "<type your message>"
 ```
 
 Push changes to GitHub.
