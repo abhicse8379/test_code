@@ -2,8 +2,7 @@
     1. DOM ACCESS METHODS
     ========================================= */
     // getElementById()
-    const storeTitle =
-        document.getElementById("storeTitle");
+    const storeTitle = document.getElementById("storeTitle");
     const themeBtn =
         document.getElementById("themeBtn");
     const cartCount =
@@ -61,31 +60,23 @@
         });
     });
 
-
     /* =========================================
     4. MOUSEOVER AND MOUSEOUT EVENTS
     ========================================= */
-
     for (let i = 0; i < productCards.length; i++) {
-        productCards[i].addEventListener(
-            "mouseover",
-            function() {
+        productCards[i].addEventListener("mouseover",function() {
                 this.classList.add("highlight");
                 this.style.boxShadow =
-                    "0 8px 20px rgba(0,0,0,0.25)";
+                    "10px 15px 20px rgba(223, 25, 25, 0.86)";
             }
         );
-        productCards[i].addEventListener(
-            "mouseout",
-            function() {
+        productCards[i].addEventListener("mouseout",function() {
                 this.classList.remove("highlight");
                 this.style.boxShadow =
-                    "0 3px 12px rgba(0,0,0,0.12)";
+                    "5px 3px 12px rgba(0,0,0,0.12)";
             }
         );
     }
-
-
     /* =========================================
     5. DOUBLE CLICK EVENT
     ========================================= */
@@ -93,18 +84,19 @@
     storeTitle.addEventListener(
         "dblclick",
         function() {
-            storeTitle.textContent =
-                "ShopEase \n Online Store";
-            storeTitle.style.color =
-                "yellow";
-        }
-    );
-
+            storeTitle.textContent ="ShopEase - Online Store";
+            storeTitle.style.color ="yellow";
+        
+        setTimeout(function(){
+        storeTitle.textContent ="ShopEase";
+            storeTitle.style.color ="White";
+        },2000);
+    });      
+0
 
     /* =========================================
     6. KEYDOWN EVENT
     ========================================= */
-
     searchInput.addEventListener(
         "keydown",
         function(event) {
@@ -117,70 +109,43 @@
             }
         }
     );
-
-
     /* =========================================
     7. KEYUP EVENT – LIVE SEARCH
     ========================================= */
-
     searchInput.addEventListener(
         "keyup",
         function() {
-
             const searchValue =
                 searchInput.value.toLowerCase();
-
             let visibleProducts = 0;
-
             for (let i = 0;
                 i < productCards.length;
                 i++) {
-
                 const productName =
                     productCards[i]
                     .querySelector("h3")
                     .textContent
                     .toLowerCase();
-
                 if (productName.includes(searchValue)) {
-
                     productCards[i].style.display =
                         "block";
-
                     visibleProducts++;
-
                 } else {
-
                     productCards[i].style.display =
                         "none";
                 }
-
             }
-
-
-            const message =
-                document.getElementById(
-                    "searchMessage"
-                );
-
+            const message =document.getElementById("searchMessage");
             if (searchValue === "") {
-
                 message.textContent = "";
-
             } else {
-
                 message.textContent =
-                    visibleProducts +
-                    " product(s) found";
-
+                    visibleProducts +" product(s) found";
             }
-
         }
     );
-
-
     /* =========================================
-       8. CHANGE EVENT
+    8. CHANGE EVENT
     ========================================= */
 
     const category =
