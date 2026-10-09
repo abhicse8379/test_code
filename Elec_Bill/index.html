@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Electricity Bill Calculator</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Bill Calculator</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Consumer Details</h2>
+            <form id="billForm">
+                <label for="consumerName">Consumer Name:</label>
+                <input type="text" id="consumerName"placeholder="Enter consumer name">
+                <label for="consumerNumber">Consumer Number:</label>
+                <input type="text" id="consumerNumber"placeholder="Enter consumer number">
+                <label for="units">Units Consumed:</label>
+                <input type="number" id="units"placeholder="Enter units consumed"min="0">
+                <button type="submit">Calculate Bill</button>
+            </form>
+
+            <p id="error" class="error"></p>
+            <!-- Bill Summary -->
+            <section id="billSummary" class="bill-summary">
+                <h2>Bill Summary</h2>
+                <p>
+                    <strong>Consumer Name:</strong>
+                    <span id="displayName">-</span>
+                </p>
+                <p>
+                    <strong>Consumer Number:</strong>
+                    <span id="displayNumber">-</span>
+                </p>
+                <p>
+                    <strong>Units Consumed:</strong>
+                    <span id="displayUnits">-</span>
+                </p>
+                <p>
+                    <strong>Energy Charge:</strong>
+                    ₹<span id="energyCharge">0</span>
+                </p>
+                <p>
+                    <strong>Service Charge:</strong>
+                    ₹<span id="serviceCharge">50</span>
+                </p>
+                <p class="total">
+                    <strong>Total Payable Amount:</strong>
+                    ₹<span id="totalBill">0</span>
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Electricity Department. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

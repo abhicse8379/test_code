@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store Billing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <h3>Notebook</h3>
+                    <p class="price">₹100</p>
+                    <label for="notebook">Quantity:</label>
+                    <input type="number"id="notebook"min="0"value="0">
+                </div>
+                <div class="product-card">
+                    <h3>Backpack</h3>
+                    <p class="price">₹800</p>
+                    <label for="backpack">Quantity:</label>
+                    <input type="number"id="backpack"min="0"value="0">
+                </div>
+                <div class="product-card">
+                    <h3>Headphones</h3>
+                    <p class="price">₹1,200</p>
+                    <label for="headphones">Quantity:</label>
+                    <input type="number"id="headphones"min="0"value="0">
+                </div>
+            </div>
+            <button id="generateBill">
+                Generate Bill
+            </button>
+            <p id="message"></p>
+        </section>
+
+        <section class="bill-summary">
+            <h2>Order Summary</h2>
+            <div id="billDetails"
+                <p>No bill generated yet.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Smart Store. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

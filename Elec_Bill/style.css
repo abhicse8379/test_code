@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+}
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    margin: 0 0 15px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+.container {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+    border-color: #1e3a5f;
+}
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e3a5f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #142840;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+.bill-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.bill-summary h2 {
+    margin-top: 0;
+}
+.bill-summary p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+.bill-summary .total {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+}
+footer {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 20px 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .bill-summary p {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .bill-summary .total {
+        font-size: 18px;
+    }
+}

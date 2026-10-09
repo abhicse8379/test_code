@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    margin: 0 0 15px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+.products {
+    text-align: center;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+.product-card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.product-card h3 {
+    margin-top: 0;
+}
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+.product-card input {
+    width: 80px;
+    padding: 8px;
+    margin-top: 10px;
+}
+button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #0d47a1;
+}
+#message {
+    color: red;
+    font-weight: bold;
+}
+.bill-summary {
+    margin-top: 40px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.bill-summary h2 {
+    text-align: center;
+}
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+.discount {
+    color: green;
+}
+.final {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #dff0d8;
+    color: #155724;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #263238;
+    color: white;
+}
